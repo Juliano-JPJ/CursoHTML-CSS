@@ -1,0 +1,50 @@
+header {
+    color: white;
+    background-color: rgba(55, 219, 55, 0.656);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0px 15px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+article {
+    background-color: lightgray;
+}
+
+article > h1 {
+    background-color: green;
+    color: white;
+}
+
+article > li {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+
+}

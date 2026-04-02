@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            /* 
+            Medidas Absolutas: cm, mm, in (polegada), px (pixel), pt (ponto), pc (paica)
+
+            Medidas Relativas: em, ex, rem, vw, vh, %
+
+            O ideal é usar px ou em, sendo o tamanho padrão 16px ou 1em
+            16px = 1em
+            */
+            
+        }
+
+        h1 {
+            
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder; -> lighter normal bold bolder 100-900
+            font-size: 3em;
+            font-style: italic;
+
+            shorthand font:
+            font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans'
+
+            /*Pode fazer a shorthand sem as opções que não quiser, só não pode alterar a ordem*/
+        }
+
+        /* weight(peso) width(largura) height(altura) */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur fugiat impedit distinctio, ipsum quos earum repudiandae! Quos culpa eligendi deleniti numquam voluptate natus voluptas dolore nisi, mollitia illum, nostrum saepe? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae totam deleniti harum tempora reprehenderit soluta! Quas, accusamus beatae? Dolorem perspiciatis aliquid ex. Id veritatis ducimus beatae consequatur saepe facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus exercitationem explicabo alias aliquid consequuntur qui? Facere earum nostrum saepe ad voluptatem, delectus, nobis beatae voluptatibus aut, commodi officiis laborum quisquam.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ab magni blanditiis eum aspernatur praesentium saepe ex officia quod porro sed dolore pariatur quo, laboriosam eos odio? Cupiditate, maxime veritatis!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magni iste, tempore autem consectetur distinctio similique officiis dolore qui eum aliquid soluta possimus sunt doloremque quaerat sapiente sequi. Saepe, aspernatur.</p>
+</body>
+</html>
