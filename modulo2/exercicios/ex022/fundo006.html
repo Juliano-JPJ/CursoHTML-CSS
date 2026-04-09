@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens de Fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
+            background: black url('imagens/wallpaper002.jpg') center center / cover no-repeat fixed;
+
+            /* Shorthand - background
+            color -> image -> position -> / -> size -> repeat -> attachment
+            obs: precisa colocar a barra antes do size
+
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
+            background-size: cover; (cobre o site com a imagem, mesmo que precise cortar um pedaço dela. É o único que não funciona na shorthand)
             background-repeat: no-repeat;
-            background-size: cover; /*cobre o site com a imagem, mesmo que precise cortar um pedaço dela*/
+            background-attachment: fixed; (mantem a imagem fixa no fundo a tela, podendo rolar a tela e a imagem irá seguir)
+            */
+                
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +36,11 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo placeat tempore aperiam provident laborum commodi eius nemo explicabo exercitationem minus, iure excepturi facilis, aliquid illo eos debitis earum, veniam vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad nam accusamus voluptatum eaque maiores inventore provident vel ipsum expedita. Voluptas laudantium, doloribus ut ipsam dignissimos laboriosam soluta voluptate alias facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt quasi nam possimus laboriosam sunt sit perferendis sapiente vel rem molestiae dolores quia voluptate eos illum sed, maiores inventore. Iusto!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo placeat tempore aperiam provident laborum commodi eius nemo explicabo exercitationem minus, iure excepturi facilis, aliquid illo eos debitis earum, veniam vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad nam accusamus voluptatum eaque maiores inventore provident vel ipsum expedita. Voluptas laudantium, doloribus ut ipsam dignissimos laboriosam soluta voluptate alias facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt quasi nam possimus laboriosam sunt sit perferendis sapiente vel rem molestiae dolores quia voluptate eos illum sed, maiores inventore. Iusto!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo placeat tempore aperiam provident laborum commodi eius nemo explicabo exercitationem minus, iure excepturi facilis, aliquid illo eos debitis earum, veniam vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad nam accusamus voluptatum eaque maiores inventore provident vel ipsum expedita. Voluptas laudantium, doloribus ut ipsam dignissimos laboriosam soluta voluptate alias facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt quasi nam possimus laboriosam sunt sit perferendis sapiente vel rem molestiae dolores quia voluptate eos illum sed, maiores inventore. Iusto!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo placeat tempore aperiam provident laborum commodi eius nemo explicabo exercitationem minus, iure excepturi facilis, aliquid illo eos debitis earum, veniam vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad nam accusamus voluptatum eaque maiores inventore provident vel ipsum expedita. Voluptas laudantium, doloribus ut ipsam dignissimos laboriosam soluta voluptate alias facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt quasi nam possimus laboriosam sunt sit perferendis sapiente vel rem molestiae dolores quia voluptate eos illum sed, maiores inventore. Iusto!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo placeat tempore aperiam provident laborum commodi eius nemo explicabo exercitationem minus, iure excepturi facilis, aliquid illo eos debitis earum, veniam vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad nam accusamus voluptatum eaque maiores inventore provident vel ipsum expedita. Voluptas laudantium, doloribus ut ipsam dignissimos laboriosam soluta voluptate alias facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt quasi nam possimus laboriosam sunt sit perferendis sapiente vel rem molestiae dolores quia voluptate eos illum sed, maiores inventore. Iusto!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo placeat tempore aperiam provident laborum commodi eius nemo explicabo exercitationem minus, iure excepturi facilis, aliquid illo eos debitis earum, veniam vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad nam accusamus voluptatum eaque maiores inventore provident vel ipsum expedita. Voluptas laudantium, doloribus ut ipsam dignissimos laboriosam soluta voluptate alias facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt quasi nam possimus laboriosam sunt sit perferendis sapiente vel rem molestiae dolores quia voluptate eos illum sed, maiores inventore. Iusto!</p>
     </main>
 </body>
