@@ -11,19 +11,26 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /*Isso faz com que cada retângulo da tabela fique colado um no outro*/
-        }
-
-        tr.linha {
-            background-color: gray;
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*alinhamento horizontal da tabela, o padrão é left*/
+            vertical-align: middle; /*alinhamento vertical, padrão é middle*/
         }
 
-        td.dado {
+        .numero {
+            text-align: right;
+        }
+
+        .linha {
+            background-color: gray;
+        }
+
+        .dado {
             background-color: yellow;
         }
 
@@ -47,12 +54,12 @@
         <tr class="linha">
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr>
             <td>A4</td>
