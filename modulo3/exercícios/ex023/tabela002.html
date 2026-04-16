@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*visualmente não muda nada, porém para fazer o cabeçalho fixo precisa dessa configuração*/
+        }
+
+        caption {
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            font-size: 1.5em
         }
 
         td, th {
@@ -24,6 +32,16 @@
             color: white;
         }
 
+        thead > tr > th { /*para fixar o cabeçalho da tabela*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) { /*para fazer um efeito zebrado, o 2n significa que pinta a cada 2 linhas, podendo alterar para o numero que quiser. pode usar odd para as linhas ímpares e even para as pares, ou fazer 2n-1 para trocar as linhas (ou invés de começar pela 2, começa pela 1)*/
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
@@ -33,6 +51,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA DE TABELAS (grandes)
      TABLE
+        CAPTION - legenda
         THEAD - table head (não é obrigatório)
             TR, TD, TH
         TBODY - table body
@@ -41,10 +60,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--scope col quer dizer que os dados desse título estão na mesma coluna-->
+                <th scope="col" style="width: 50px;">População</th> <!-- Um exemplo de como criar um style no próprio item-->
             </tr>
         </thead>
         <tbody>
@@ -159,10 +179,16 @@
         </tbody>
         <tfoot>
                 <tr>
-                  <th>Total de Habitantes</th>  
+                  <th scope="row">Total de Habitantes</th> <!-- Scope row quer dizer que os dados desse título estão na mesma linha -->
                   <td class="num"><strong>210.147.125</strong></td>
                 </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga autem odit consequuntur sapiente minus accusantium sequi debitis, deserunt dolorem iure, repudiandae distinctio, maxime aliquid similique rem. Quisquam, alias optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt possimus optio officiis expedita saepe perspiciatis quaerat ratione, dolorem pariatur, fugit magnam omnis odio necessitatibus quam cum beatae, nobis officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium possimus, saepe iste repudiandae porro corrupti distinctio unde labore minima doloribus quos dicta nulla, quas molestiae, corporis natus eius! Odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut doloremque labore dicta ducimus architecto earum. Error sint praesentium enim debitis nihil numquam iusto molestias odit ad asperiores. Molestias, corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga autem odit consequuntur sapiente minus accusantium sequi debitis, deserunt dolorem iure, repudiandae distinctio, maxime aliquid similique rem. Quisquam, alias optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt possimus optio officiis expedita saepe perspiciatis quaerat ratione, dolorem pariatur, fugit magnam omnis odio necessitatibus quam cum beatae, nobis officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium possimus, saepe iste repudiandae porro corrupti distinctio unde labore minima doloribus quos dicta nulla, quas molestiae, corporis natus eius! Odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut doloremque labore dicta ducimus architecto earum. Error sint praesentium enim debitis nihil numquam iusto molestias odit ad asperiores. Molestias, corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga autem odit consequuntur sapiente minus accusantium sequi debitis, deserunt dolorem iure, repudiandae distinctio, maxime aliquid similique rem. Quisquam, alias optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt possimus optio officiis expedita saepe perspiciatis quaerat ratione, dolorem pariatur, fugit magnam omnis odio necessitatibus quam cum beatae, nobis officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium possimus, saepe iste repudiandae porro corrupti distinctio unde labore minima doloribus quos dicta nulla, quas molestiae, corporis natus eius! Odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut doloremque labore dicta ducimus architecto earum. Error sint praesentium enim debitis nihil numquam iusto molestias odit ad asperiores. Molestias, corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga autem odit consequuntur sapiente minus accusantium sequi debitis, deserunt dolorem iure, repudiandae distinctio, maxime aliquid similique rem. Quisquam, alias optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt possimus optio officiis expedita saepe perspiciatis quaerat ratione, dolorem pariatur, fugit magnam omnis odio necessitatibus quam cum beatae, nobis officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium possimus, saepe iste repudiandae porro corrupti distinctio unde labore minima doloribus quos dicta nulla, quas molestiae, corporis natus eius! Odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut doloremque labore dicta ducimus architecto earum. Error sint praesentium enim debitis nihil numquam iusto molestias odit ad asperiores. Molestias, corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga autem odit consequuntur sapiente minus accusantium sequi debitis, deserunt dolorem iure, repudiandae distinctio, maxime aliquid similique rem. Quisquam, alias optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt possimus optio officiis expedita saepe perspiciatis quaerat ratione, dolorem pariatur, fugit magnam omnis odio necessitatibus quam cum beatae, nobis officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium possimus, saepe iste repudiandae porro corrupti distinctio unde labore minima doloribus quos dicta nulla, quas molestiae, corporis natus eius! Odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut doloremque labore dicta ducimus architecto earum. Error sint praesentium enim debitis nihil numquam iusto molestias odit ad asperiores. Molestias, corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga autem odit consequuntur sapiente minus accusantium sequi debitis, deserunt dolorem iure, repudiandae distinctio, maxime aliquid similique rem. Quisquam, alias optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt possimus optio officiis expedita saepe perspiciatis quaerat ratione, dolorem pariatur, fugit magnam omnis odio necessitatibus quam cum beatae, nobis officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium possimus, saepe iste repudiandae porro corrupti distinctio unde labore minima doloribus quos dicta nulla, quas molestiae, corporis natus eius! Odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut doloremque labore dicta ducimus architecto earum. Error sint praesentium enim debitis nihil numquam iusto molestias odit ad asperiores. Molestias, corrupti.</p>
 </body>
 </html>
