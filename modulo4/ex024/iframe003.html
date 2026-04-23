@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eaque molestias quia, vel facere, ipsa natus, possimus aperiam mollitia alias dolor! Explicabo possimus, reiciendis quidem repellat nostrum earum placeat ad.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto molestias distinctio vel perferendis natus nam possimus, nostrum eum dolores ab tempora laboriosam! Quaerat esse voluptates alias tempore voluptatum harum. Velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et eos a iste quidem laboriosam provident eius, repudiandae vero debitis. Ab nihil illum eum aut in cumque error aperiam aliquid!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto molestias distinctio vel perferendis natus nam possimus, nostrum eum dolores ab tempora laboriosam! Quaerat esse voluptates alias tempore voluptatum harum. Velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et eos a iste quidem laboriosam provident eius, repudiandae vero debitis. Ab nihil illum eum aut in cumque error aperiam aliquid!</p><img src='imagens/cursoemvideo.png'>"> <!-- Foi colocado um name para poder fazer o target do link / No lugar do scr foi colocada a tag srcdoc, dando a possibilidade de colocar html dentro do próprio iframe-->
+        <p>Infelizmente seu navegador não é compatível com esse iframe</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis recusandae explicabo aperiam provident accusantium optio eaque pariatur ipsa, laborum, nesciunt officia et asperiores quo perferendis saepe culpa? Reiciendis, aspernatur laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatibus corporis odio alias esse aspernatur delectus, aliquid recusandae sit quia quidem distinctio excepturi earum quaerat vel repellendus, sequi inventore! Libero.</p>
+</body>
+</html>
