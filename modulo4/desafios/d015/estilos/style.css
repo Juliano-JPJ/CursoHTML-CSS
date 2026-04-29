@@ -40,3 +40,22 @@ iframe#tela {
     width: 268px;
     height: 471px;
 }
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img { /*OU section#redes-sociais > a > img*/
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*Transforma a imagem quadrada em um círculo*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box; /*Para a borda fazer parte da caixa, assim no img:hover quando passa o mouse em uma imagem a outra não mexe junto*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.642); /*Coloca a borda branca quando passa o mouse em cima*/
+    transform: translate(-3px, -3px); /*A imagem se move um pouco, dando o efeito de estar pulando*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616); /*Aumentando um pouco a sombra quando a imagem levanta*/
+    transition: transform 0.3s, border 1s; /*Cria uma transição, nesse caso fazendo com que o transform aconteça em 0.3s e o border em 1s */
+}
