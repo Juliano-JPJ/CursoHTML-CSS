@@ -12,9 +12,10 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="Sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- method post esconde os dados preenchidos da url, no HTML tem dois métodos, o GET (padrão, não precisa colocar nada) e o POST / autocomplete off é para não dar sugestões na hora de preencher-->
+        <p><label for="inome">Nome:</label> <!-- o Label serve para linkar o "Nome" com o input através do id do input, dando semântica ao "Nome" e não sendo apenas um parágrafo-->
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
